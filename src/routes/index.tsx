@@ -119,7 +119,7 @@ function QuizApp() {
 
   function pickAnswer(i: number) {
     if (selected !== null) return;
-    const q = QUESTIONS[qIndex];
+    const q = QUESTIONS[qIndex]!;
     const correct = i === q.correct;
     setSelected(i);
     setAnswers((prev) => [...prev, { question: q, selected: i, correct }]);
@@ -149,10 +149,10 @@ function QuizApp() {
     );
   }
 
-  return (
-    <QuestionScreen
-      question={QUESTIONS[qIndex]}
-      qIndex={qIndex}
+    return (
+      <QuestionScreen
+        question={QUESTIONS[qIndex]!}
+        qIndex={qIndex}
       total={total}
       score={score}
       selected={selected}
