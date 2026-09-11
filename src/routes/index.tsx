@@ -214,7 +214,7 @@ function StartScreen({ onStart, total }: { onStart: () => void; total: number })
               Geography
             </span>
             <span className="rounded-full bg-ink/10 px-3 py-1 text-xs font-medium text-ink/70">
-              Art
+              Music
             </span>
           </div>
 
